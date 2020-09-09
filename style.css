@@ -95,6 +95,9 @@ a:hover {
     color: lightyellow;
 }
 
+/* .card-img-top {
+    height: 200px;
+} */
 
 /* Method found at: https://css-tricks.com/snippets/css/drop-caps/ */
 .aboutContent:first-child:first-letter {
