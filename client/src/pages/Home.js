@@ -1,15 +1,23 @@
-import React from "react";
+import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
+import { Col, Row, Container } from "../components/Grid";
 
-function Home() {
-  return (
-    <div>
-      <Jumbotron>
-            <h1 class="display-4">E. Anne Gilbertsen</h1>
-            <p class="lead"> RESPONSIVE WEB DEVELOPMENT FOR EVERY OCCASION </p>
-      </Jumbotron>
-    </div>
-  );
+class Home extends Component {
+
+    render() {
+        return (
+            <Container fluid>
+                <Row>
+                    <Col size="md-12">
+                        <Jumbotron>
+                            <h1>E. Anne Gilbertsen</h1>
+                        </Jumbotron>
+                    </Col>
+                </Row>
+            </Container>
+        )
+    }
+
 }
 
 export default Home;

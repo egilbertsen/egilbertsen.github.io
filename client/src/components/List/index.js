@@ -3,12 +3,14 @@ import "./style.css";
 
 // This file exports both the List and ListItem components
 
-export function CardGroup({ children }) {
+export function List({ children }) {
   return (
-      <div className="card-group">{children}</div>
+    <div className="list-overflow-container">
+      <ul className="list-group">{children}</ul>
+    </div>
   );
 }
 
-export function Card({ children }) {
-  return <div class="card">{children}</div>;
+export function ListItem({ children }) {
+  return <li className="list-group-item" >{children}</li>;
 }

@@ -1,70 +1,82 @@
-import React, { useState, useEffect } from "react";
+import React, { Component } from "react";
 import Jumbotron from "../components/Jumbotron";
-import API from "../utils/API";
-import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
-import { CardGroup, Card } from "../components/List";
+import ProjectCard from "../components/ProjectCard";
 
-function Work() {
-    // Setting our component's initial state
-    const [projects, setProjects] = useState([])
+class Shelf extends Component {
 
-    // Load all projects and store them with setProjects
-    useEffect(() => {
-        loadProjects()
-    }, [])
+  state = {
+    projects: []
+  };
+  
+  componentDidMount = () => {
+    this.setState({
+          projects: [
+            {
+              name: "Bookshelf",
+              image: "",
+              description: "A React app that allows a user to query Google Books and save items of interest to a MongoDB.",
+              repoLink: "https://github.com/egilbertsen/bookshelf",
+              appLink: ""
+            },
+            {
+              name: "Weather-Or-Not",
+              image: "",
+              description: "A weather app that uses Chart.js to help the user understand upcoming weather conditions.",
+              repoLink: "https://github.com/egilbertsen/weather-or-not",
+              appLink: "https://egilbertsen.github.io/weather-or-not/"
+            },
+            {
+              name: "Budget",
+              image: "",
+              description: "A budgeting app that provides charting of cashflow and allows for offline caching.",
+              repoLink: "https://github.com/egilbertsen/budget",
+              appLink: "https://desolate-ridge-68330.herokuapp.com/"
+            },
+            {
+              name: "Jeopardize",
+              image: "",
+              description: "A Jeopardy training app, my contribution to which was a user authentication system with encryption.",
+              repoLink: "https://github.com/egilbertsen/Jeopardize",
+              appLink: ""
+            }
+          ]
+        })
+  };
 
-    // Loads all projects and sets them to projects
-    function loadProjects() {
-        API.getProjects()
-            .then(res =>
-                setProjects(res.data)
-            )
-            .catch(err => console.log(err));
-    };
-
-
+  render() {
     return (
-        
-        <Container fluid>
-            <Jumbotron>
-                <h1>E.A. Gilbertsen</h1>
-            </Jumbotron>
+      <Container fluid>
+        <Row>
+          <Col size="md-12">
             <Row>
-                <Col size="md-12">
-                    <h1>Work</h1>
-                </Col>
+              <Col size="md-12">
+                <Jumbotron>
+                  <h1>Work</h1>
+                </Jumbotron>
+              </Col>  
             </Row>
-            <Row>
-                <Col size="md-6 sm-12">
-                    
-                    {projects.length ? (
-                        <CardGroup>
-                            {projects.map(Project => (
-                                <Card key={project._id}>
-                                    <div class="card" style="width: 18rem; height: 22rem;">
-                                        <a href={project.launchedApp}>
-                                            <img class="card-img-top" src={project.image} alt={project.altTxt} />
-                                        </a>
-                                        <div class="card-body">
-                                            <h5 class="card-title">{project.title}</h5>
-                                            <p class="card-text">{project.description}</p>
-                                            <a href={project.repo}>GitHub Repository</a>
-                                            <a href={project.launchedApp}>Launched App</a>
-                                        </div>
-
-                                    </div>
-                                </Card>
-                            ))}
-                        </CardGroup>
-                    ) : (
-                            <h3>No Results to Display</h3>
-                        )}
+            {this.state.projects.length ? (
+              <Row>
+                <Col size="md-12" className="projectContainer">
+                {this.state.projects.map(project => (
+                  <ProjectCard 
+                    name = {project.name}
+                    repoLink = {project.repoLink}
+                    appLink = {project.appLink}
+                    description = {project.description}
+                    image = {project.image}
+                  />
+                ))}  
                 </Col>
-            </Row>
-        </Container>
+              </Row>
+            ) : (
+                <h3>No saved books to display</h3>
+              )}
+          </Col>
+        </Row>
+      </Container >
     );
+  }
 }
-
-
-export default Work;
+export default Shelf;
