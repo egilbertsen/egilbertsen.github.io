@@ -1,0 +1,59 @@
+.cutout {
+    margin: 5%;
+    border: 1px solid navy;
+    border-radius: 12px;
+    width: 20%;
+    height: 15px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-cont {
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid navy;
+    color:rgb(1, 1, 88);
+    border-radius: 10px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.portraitImg {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.cardName {
+    color:  rgb(1, 1, 88);
+    font-size: 40px;
+    font-family: Georgia;
+    font-variant: small-caps;
+    font-weight:200
+}
+
+.jobTitle {
+    color: rgb(1, 1, 88);
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+
+a {
+    color:rgb(46, 139, 87)
+}
+
+a:hover {
+    color:rgb(30, 92, 57)
+}
+
+.cardLine {
+   border-width: 3px;
+   width: 70%;
+   border-color: rgb(160, 160, 160);
+}
+
+.contactInfo {
+    font-weight: 400;
+    padding-bottom: 30px;
+}

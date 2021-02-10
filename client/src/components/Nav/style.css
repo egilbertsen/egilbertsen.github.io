@@ -1,7 +1,10 @@
 .navbar-brand {
-    color: rgb(18, 4, 70);
+    color:rgb(1, 1, 88);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .navbar-brand:hover {
-    color:rgb(101, 190, 11)
+    color:rgb(46, 139, 87)
 }

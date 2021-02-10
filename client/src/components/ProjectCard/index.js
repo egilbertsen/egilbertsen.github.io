@@ -3,7 +3,6 @@ import { Card } from "react-bootstrap";
 import "./style.css";
 
 export default class ProjectCard extends Component {
-
     constructor(props) {
         super(props);
     }
