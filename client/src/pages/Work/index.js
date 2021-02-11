@@ -3,7 +3,7 @@ import Jumbotron from "../../components/Jumbotron";
 import { Col, Row, Container } from "../../components/Grid";
 import ProjectCard from "../../components/ProjectCard";
 
-class Shelf extends Component {
+class Work extends Component {
 
   state = {
     projects: []
@@ -79,4 +79,4 @@ class Shelf extends Component {
     );
   }
 }
-export default Shelf;
+export default Work;

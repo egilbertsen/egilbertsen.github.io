@@ -16,6 +16,10 @@
     color:rgb(1, 1, 88);
     border-radius: 10px;
     box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    max-width: 600px;
+    min-width: 400px;
+    min-height: 700px;
 }
 
 .portraitImg {
@@ -31,7 +35,7 @@
     font-weight:200
 }
 
-.jobTitle {
+.secondTitle {
     color: rgb(1, 1, 88);
     font-size: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,6 +58,12 @@ a:hover {
 }
 
 .contactInfo {
+    font-family: Georgia;
     font-weight: 400;
     padding-bottom: 30px;
+    
+}
+
+.contactSpan {
+    font-style: italic;
 }
