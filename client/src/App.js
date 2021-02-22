@@ -5,6 +5,7 @@ import Work from "./pages/Work/index";
 import Contact from "./pages/Contact";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import "./style.css"
 
 function App() {
   return (

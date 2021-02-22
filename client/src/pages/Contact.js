@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
 import { Col, Row, Container } from "../components/Grid";
 
 class Contact extends Component {
@@ -9,9 +8,9 @@ class Contact extends Component {
             <Container fluid>
                 <Row>
                     <Col size="md-12">
-                        <Jumbotron>
+                        <div>
                             <h1>Contact</h1>
-                        </Jumbotron>
+                        </div>
                     </Col>
                 </Row>
                 

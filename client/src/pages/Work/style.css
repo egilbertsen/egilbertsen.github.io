@@ -1,8 +1,15 @@
-.projectContainer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px;
-    float: right;
+
+
+h1 {
+    font-family: 'Shippori Mincho', serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Shippori Mincho', serif;
+}
+
+.header {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }

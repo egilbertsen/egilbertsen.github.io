@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Card } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import "./style.css";
+import Background from  '../../images/bkg.jpeg'
 
 export default class ProjectCard extends Component {
     constructor(props) {
@@ -9,21 +10,24 @@ export default class ProjectCard extends Component {
 
     render() {
         return (
-                    <Card className="bg-dark text-white bookCard" >
-                        <Card.Img src={this.props.image} alt="Book Cover" className="coverImg" />
-                        <Card.Title>{this.props.name}</Card.Title>
-                        <Card.Text>
-                                {this.props.description}
-                        </Card.Text>
-                        <Card.Text>
-                            <a href={this.props.ink}>
+                    <div className="projectCard" >
+                        <img src={Background} alt="project image" className="d-block w-100"/>
+                        <div>
+                            <h3>
+                            {this.props.name}
+                            </h3>
+                            <p>{this.props.description}</p>
+                            <p>
+                            <a target ="_blank" href={this.props.ink}>
                                 (GitHub Repo)
                             </a>
                             <a href={this.props.ink}>
                                 (Deployed Application)
                             </a>
-                        </Card.Text>
-                    </Card>
+
+                            </p>
+                        </div>
+                    </div>
         )
     }
 }
