@@ -1,6 +1,7 @@
 import React, { State, useState} from 'react';
 import { Carousel } from 'react-bootstrap';
 import Background from "../../images/bkg.jpeg";
+import BookshelfImg from "../../images/bookshelf.png"
 import "./style.css"
 
 function PortCarousel() {
@@ -12,7 +13,7 @@ function PortCarousel() {
         <Carousel activeIndex={index} onSelect={handleSelect}>
 
             <Carousel.Item>
-                <img className="d-block w-100" src={Background} alt="Project Screenshot" />
+                <img className="d-block w-100" src={BookshelfImg} alt="Project Screenshot" />
 
                 <Carousel.Caption>
                     <h3 className="projTitle">

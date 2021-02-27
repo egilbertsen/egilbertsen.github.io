@@ -18,7 +18,7 @@ class Work extends Component {
           image: "",
           description: "A React app that allows a user to query Google Books and save items of interest to a MongoDB.",
           repoLink: "https://github.com/egilbertsen/bookshelf",
-          appLink: ""
+          appLink: "https://young-earth-08215.herokuapp.com/"
         },
         {
           name: "Weather-Or-Not",
