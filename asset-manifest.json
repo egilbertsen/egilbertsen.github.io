@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.82488a9f.chunk.css",
+    "main.js": "/static/js/main.ce950927.chunk.js",
+    "main.js.map": "/static/js/main.ce950927.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.3d3e3eed.chunk.js": "/static/js/2.3d3e3eed.chunk.js",
+    "static/js/2.3d3e3eed.chunk.js.map": "/static/js/2.3d3e3eed.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d6c75d8c4c806ea75788dc5514f2f247.js": "/precache-manifest.d6c75d8c4c806ea75788dc5514f2f247.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.82488a9f.chunk.css.map": "/static/css/main.82488a9f.chunk.css.map",
+    "static/js/2.3d3e3eed.chunk.js.LICENSE.txt": "/static/js/2.3d3e3eed.chunk.js.LICENSE.txt",
+    "static/media/Bookshelf.png": "/static/media/Bookshelf.6981ab04.png",
+    "static/media/NoteExample.png": "/static/media/NoteExample.04bd286f.png",
+    "static/media/WeatherOrNot.png": "/static/media/WeatherOrNot.d75dcc46.png",
+    "static/media/bkg.jpeg": "/static/media/bkg.47159614.jpeg",
+    "static/media/portrait.png": "/static/media/portrait.0ce71c33.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19ccc7f6.js",
+    "static/js/2.3d3e3eed.chunk.js",
+    "static/css/main.82488a9f.chunk.css",
+    "static/js/main.ce950927.chunk.js"
+  ]
+}
