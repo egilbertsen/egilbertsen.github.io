@@ -1,0 +1,10 @@
+.carousel-caption {
+    background: rgba(0, 0, 0, .85);
+    padding: 10px;
+}
+
+.d-block {
+    height: 80vh;
+    margin-left:auto;
+    margin-right:auto;
+}
