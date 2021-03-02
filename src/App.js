@@ -1,16 +1,15 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home/index";
 import Work from "./pages/Work/index";
 import Contact from "./pages/Contact";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import "./style.css"
-import { publicDecrypt } from "crypto";
+import "./style.css";
 
 function App() {
   return (
-    <Router basename={public.env.PUBLIC_URL}>
+    <Router >
       <div>
         <Nav />
         <Switch>
